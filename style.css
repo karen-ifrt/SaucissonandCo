@@ -1,0 +1,223 @@
+/* RESET CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERAL */
+
+body {
+	background-image: url(images/background-1.jpg);
+	background-size: 50%;
+	background-attachment: fixed;
+	font-family: 'Muli', sans-serif;
+}
+
+h2 {
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.divider {
+	height: 2px;
+	width: 100px;
+	background-color: #5A6D5D;
+	margin: 0 auto;
+}
+
+section {
+	margin: 20px 0;
+	opacity: 0.9;
+}
+
+section .container {
+	background-color: #fff;
+	padding: 50px 0;
+	border-radius: 2px;
+}
+
+/* NAVBAR */
+
+.topbar {
+	background-color: #5A6D5D;
+}
+
+.topbar ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topbar ul li {
+	margin: 5px 8px;
+}
+
+.navbar {
+	background-color: #fff;
+}
+
+header .container {
+	padding: 0;
+}
+
+.navbar .navbar-brand img {
+	width: 100px;
+	height: auto;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+}
+
+.navbar li a {
+	color: #5A6D5D;
+	text-transform: uppercase;
+	transition: all .5s;
+	border-radius: 2px;
+	text-decoration: none;
+	margin: 0 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.navbar li a:hover, .navbar-nav .active {
+	color: #fff;
+	background-color: #5A6D5D;
+}
+
+.navbar button {
+}
+
+/* HOME */
+
+#home .row {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#home .row img {
+	width: 300px;
+}
+
+#home .slogan .quote-1 {
+	transform: rotate(180deg);
+	padding-top: 30px;
+}
+
+#home .slogan .quote-2 {
+	padding-top: 30px;
+}
+
+#home .slogan h3 {
+	font-size: 28px;
+	font-style: italic;
+	padding: 20px 15px;
+}
+
+#home .slogan {
+	display: flex;
+	justify-content: center;
+}
+
+#home p {
+	width: 500px;
+}
+
+/* PRODUCTS */
+
+#products img {
+	width: 180px;
+	height: auto;
+	border-radius: 50%;
+	filter: grayscale()
+}
+
+#products .title p {
+	text-align: center;
+	padding: 30px 0;
+	font-size: 18px;
+}
+
+#products h4 {
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 8px;
+}
+
+#products .block-text p {
+	line-height: 1.15;
+}
+
+#products .product {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 30px 5px;
+}
+
+#products .product .block-text {
+	width: 300px;
+}
+
+#products .btn-prod a {
+	border: 1px solid #5A6D5D;
+	text-transform: uppercase;
+	padding: 10px;
+	color: #fff;
+	background-color: #5A6D5D;
+	border-radius: 2px;
+	font-size: 18px;
+	text-decoration: none;
+	transition: all .5s;
+}
+
+#products .btn-prod a:hover {
+	background-color: #fff;
+	color: #5A6D5D;
+}
+
+#products .btn-prod {
+	text-align: center;
+	margin-top: 40px;
+}
