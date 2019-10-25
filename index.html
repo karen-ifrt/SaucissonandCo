@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <header>
+    <header class="fixed-top">
         <div class="container">
             <div class="topbar">
                 <ul>
@@ -41,10 +42,10 @@
                             <a class="nav-link" href="#products">Nos produits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#atelier">Ateliers dégustation</a>
+                            <a class="nav-link" href="#atelier">Nos ateliers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -157,7 +158,7 @@
                             <img src="images/saucisson-2.jpg" alt="Saucisson au chevreuil">
                         </div>
                         <div class="block-text">
-                            <h4>Saucisson au chevreuil</h4>
+                            <h4>Saucisson de chevreuil</h4>
                             <p>Vous êtes à la recherche d’une saveur originale pour vos apéros ? Découvrez le saucisson
                                 au chevreuil, un vrai régal pour les papilles ! Amateurs de viande de gibier ? Vous
                                 allez adorer le goût assez prononcé de la viande de chevreuil !</p>
@@ -174,7 +175,7 @@
                         <div class="block-text">
                             <h4>Saucisson au roquefort
                             </h4>
-                            <p>Préparée avec des viandes de porc hachées, délicatement épicées et subtilement
+                            <p>Préparé avec des viandes de porc hachées, délicatement épicées et subtilement
                                 agrémentées de miettes de Roquefort. Embossée dans un boyau naturel, cette préparation
                                 s'affinera entre 2 et 3 semaines en séchoir de montagne.</p>
                         </div>
@@ -207,16 +208,141 @@
     <section id="atelier">
 
         <div class="container">
-                <div class="title">
-                        <h2>ATELIERS DEGUSTATION</h2>
-                        <div class="divider"></div>
+            <div class="title">
+                <h2>Nos ateliers</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/atelier-1.jpg" alt="Atelier" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Ateliers dégustation</h5>
+                            <p class="card-text">
+                                Au cours de ces ateliers dégustation, nous vous proposons de découvrir nos nouveautés
+                                ainsi que des accords saucissons et vins.
+                            </p>
+                            <a href="#" class="card-btn">Voir les disponibilités</a>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/atelier-2.jpg" alt="Atelier" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Visites guidées</h5>
+                            <p class="card-text">Nos locaux de production ouvrent leurs portes toutes les semaines afin
+                                de vous faire découvrir notre savoir-faire et répondre à vos interrogations.</p>
+                            <a href="#" class="card-btn">Voir les disponibilités</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-star bg-light mb-3">
+                        <div class="card-header">Les derniers avis</div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div class="chip">
+                                    <img src="images/img_avatar.png" alt="Person" width="96" height="96">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="chip">
+                                    <img src="images/img_avatar.png" alt="Person" width="96" height="96">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
 
+    <section id="contact">
+        <div class="container">
+            <div class="title">
+                <h2>Nous contacter</h2>
+                <div class="divider"></div>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <label>Nom :</label>
+                        <input type="text" class="form-control" placeholder="Votre nom">
+                    </div>
+                    <div class="col-md-6">
+                        <label>E-mail :</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Votre adresse e-mail">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Message :</label>
+                    <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+                </div>
 
+                <button class="btn" type="submit">Envoyer</button>
+            </form>
 
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-foot">
+            <div class="content">
+                <div class="row m-auto">
+                    <div class="col-md-4">
+                        <ul>
+                            <li class="li-title">Saucisson&Co</li>
+                            <li>6 rue du Sanglier</li>
+                            <li>90000 Belfort</li>
+                            <div class="small-divider"></div>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li class="li-title">Nos coordonnées</li>
+                            <li>saucissonandco@gmail.com</li>
+                            <li>03 84 55 73 32</li>
+                            <div class="small-divider"></div>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li class="li-title">Nos horaires</li>
+                            <li>Lundi au Vendredi | 9h00-18h00</li>
+                            <li>Samedi | 9h00-12h30</li>
+                            <div class="small-divider"></div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container container-cred">
+            <div class="footer-credits">
+                <p>© 2019 | Karen I. | Promo ACS Belfort</p>
+            </div>
+        </div>
+
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -228,6 +354,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
