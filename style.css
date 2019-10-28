@@ -74,6 +74,8 @@ footer {
 
 section {
 	margin: 20px 0;
+	opacity: 0.9;
+
 }
 
 section .container {
@@ -130,6 +132,7 @@ header .container {
 	background-color: #5A6D5D;
 }
 
+
 /* HOME */
 
 #home .row {
@@ -138,7 +141,7 @@ header .container {
 }
 
 #home .row img {
-	max-width: 200px;
+	max-width: 400px;
 }
 
 #home .slogan .quote-1 {
@@ -161,8 +164,11 @@ header .container {
 	justify-content: center;
 }
 
-#home p {
-	/* width: 500px; */
+
+#home .paragraph {
+	text-align: left;
+	padding: 0 50px;
+	line-height: 1.25;
 }
 
 /* PRODUCTS */
@@ -271,7 +277,7 @@ header .container {
 }
 
 #atelier .card-star {
-	height: 400px;
+	height: 260px;
 }
 
 .checked {
@@ -305,6 +311,10 @@ header .container {
 
   #contact input {
 	  margin-bottom: 20px;
+  }
+
+  #contact textarea {
+	resize: none;
   }
 
   #contact label {
@@ -363,9 +373,23 @@ header .container {
 
 
 
+
+
+
+
   @media screen and (max-width: 560px) {
 	  .row {
 		margin-right: 0!important;
+	  }
+
+	  /* HOME */
+
+	  #home .paragraph {
+		  padding: 0;
+	  }
+
+	  #home img {
+		  width: 250px;
 	  }
 
 	  #products .product {
@@ -399,4 +423,61 @@ header .container {
 		margin-top: 20px;
 	}
 
+	/* ATELIER */
+
+	#atelier .card {
+		margin-top: 20px;
+		height: auto;
+	}
+
+	#atelier .first-card {
+		margin-top: 0;
+	}
+
+	/* FOOTER */
+
+	footer .container-foot {
+		text-align: center;
+	}
+
+	footer .small-divider {
+		margin: 10px auto;
+	}
+
+
+
+
   }
+
+    @media screen and (max-width: 992px) {
+	#products .product {
+		  display: block;
+		  text-align: center;
+	  }
+
+	  #products img {
+		max-width: 180px;
+		height: auto;
+		border-radius: 50%;
+		filter: none;
+		transition: all .5s ease;
+	}
+
+	#products .block-img {
+		max-width: 180px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin: 0 auto;
+	}	
+	
+	#products img:hover {
+		filter: grayscale(100%);
+		transform: scale(1.25);
+		cursor: pointer;
+	}
+
+	#products .product .block-text {
+		width: auto;
+		margin-top: 20px;
+	}
+	}
