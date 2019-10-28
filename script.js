@@ -27,5 +27,5 @@ window.addEventListener("scroll", function(){
 });
 
 function topFunction() {
-    $("html").animate({ scrollTop: "0" }, "600");
+    $("html").animate({ scrollTop: "0" }, "1500");
 }

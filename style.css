@@ -456,7 +456,8 @@ header .container {
   @media screen and (max-width: 560px) {
 	  .row {
 		margin-right: 0!important;
-	  }
+		margin-left: 0!important;
+		  }
 
 	  /* HOME */
 
@@ -484,6 +485,18 @@ header .container {
 
 	  #home .meat li .special {
 		  padding-top: 5px;
+	  }
+
+	  #home .slogan {
+		text-align: center;
+	  }
+
+	  #home .slogan img {
+		  margin: 0 20px;
+	  }
+
+	  #home .map-content {
+		  padding-left: 0!important;
 	  }
 
 	  /* PRODUCTS */
