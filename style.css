@@ -84,6 +84,34 @@ section .container {
 	border-radius: 2px;
 }
 
+#myBtn {
+    display: block; 
+    position: fixed; 
+    bottom: -100px; 
+    right: 40px; 
+    z-index: 99;
+    border: none; 
+    outline: none;
+    background-color: rgb(37, 43, 38);
+    cursor: pointer; 
+    height: 50px;
+    width: 50px;
+    border-radius: 10px; 
+    font-size: 18px; 
+    box-shadow: 4px 4px 6px 0 rgba(0,0,0,.30);
+    transition: all .25s ease-in-out;
+  }
+
+  #myBtn img {
+    width: 25px;
+	height: auto;
+	transform: rotate(45deg);
+  }
+  
+  #myBtn:hover {
+    background-color: #5A6D5D;
+  }
+
 /* NAVBAR */
 
 .topbar {
@@ -97,6 +125,10 @@ section .container {
 
 .topbar ul li {
 	margin: 5px 8px;
+}
+
+.topbar img {
+	width: 35px;
 }
 
 .navbar {
@@ -140,8 +172,48 @@ header .container {
 	margin-top: 50px;
 }
 
-#home .row img {
-	max-width: 400px;
+#home .row .home-pic {
+	width: 400px;
+}
+
+#home .map {
+	width: 550px;
+	transition: all .5s ease;
+}
+
+#home .map-content {
+	overflow: hidden;
+}
+
+#home .map:hover {
+	transform: scale(1.15);
+	cursor: pointer;
+}
+
+#home .meat {
+	padding: 0 30px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+#home .meat ul {
+	position: relative;
+	margin-top: 30px;
+}
+
+#home .meat li a {
+	text-decoration: none;
+	color: inherit;
+	position: absolute;
+	padding-top: 5px;
+}
+
+#home .meat li {
+	margin-top: 10px;
+}
+
+#home .meat li a:hover {
+	color: #5A6D5D;
 }
 
 #home .slogan .quote-1 {
@@ -162,6 +234,7 @@ header .container {
 #home .slogan {
 	display: flex;
 	justify-content: center;
+	margin-top: 40px;
 }
 
 
@@ -371,7 +444,10 @@ header .container {
 	padding: 10px 0;
   }
 
-
+  footer ul .mail {
+	text-decoration: none;
+	color: inherit;
+}
 
 
 
@@ -386,11 +462,31 @@ header .container {
 
 	  #home .paragraph {
 		  padding: 0;
+		  text-align: center;
+		  margin-bottom: 20px;
 	  }
 
-	  #home img {
-		  width: 250px;
+	  #home .slogan {
+		  margin-top: 30px;
 	  }
+
+	  #home .home-pic {
+		  max-width: 300px;
+	  }
+
+	  #home .meat li {
+		  margin-top: 20px;
+	  }
+
+	  #home .meat li a {
+		  padding: 0;
+	  }
+
+	  #home .meat li .special {
+		  padding-top: 5px;
+	  }
+
+	  /* PRODUCTS */
 
 	  #products .product {
 		  display: block;
@@ -444,10 +540,9 @@ header .container {
 		margin: 10px auto;
 	}
 
-
-
-
   }
+
+
 
     @media screen and (max-width: 992px) {
 	#products .product {
