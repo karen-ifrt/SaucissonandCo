@@ -19,7 +19,7 @@ mybutton = document.getElementById("myBtn");
 
 window.addEventListener("scroll", function(){
   if (document.documentElement.scrollTop > 200) {
-    mybutton.style.bottom = "30px";
+    mybutton.style.bottom = "40px";
 
   } else {
     mybutton.style.bottom = "-100px";

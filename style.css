@@ -88,7 +88,7 @@ section .container {
     display: block; 
     position: fixed; 
     bottom: -100px; 
-    right: 40px; 
+    right: 35px; 
     z-index: 99;
     border: none; 
     outline: none;
@@ -109,7 +109,7 @@ section .container {
   }
   
   #myBtn:hover {
-    background-color: #5A6D5D;
+    background-color: rgb(56, 68, 58);
   }
 
 /* NAVBAR */
@@ -588,4 +588,10 @@ header .container {
 		width: auto;
 		margin-top: 20px;
 	}
+
+	#home .home-pic {
+		max-width: 320px;
+	}
+
+
 	}
